@@ -10,9 +10,11 @@ import { Component } from "@angular/core/src/metadata";
       </button>
       <input
         text="text"
-        [value]="name"
-        (input)="handleInput($event)"
-        (blur)="handleBlur($event)">
+        [ngModel] = "name"
+        (ngModelChange)="handleChange($event)">
+      <input
+        text="text"
+        [(ngModel)] = "name">
       <div>
         {{ name }}
       </div>
@@ -24,11 +26,7 @@ export class AppComponent{
   handleClick() {
     this.name = "Motto";
   }
-  handleInput(event: any) {
-    this.name = event.target.value;
-  }
-  handleBlur(event: any) {
-    this.name = event.target.value;
-    console.log(event);
+  handleChange(value: string) {
+    this.name = value;
   }
 }
