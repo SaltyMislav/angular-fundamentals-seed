@@ -5,21 +5,19 @@ import { Component } from "@angular/core/src/metadata";
   styleUrls: ['app.component.scss'],
   template: `
     <div class = "app">
-      {{ title }}
+      <h1>{{ title }}</h1>
+      <img [src]="logo">
+      <input text="text" [value]="name">
       <div>
-        {{ numberOne + numberTwo }}
-      </div>
-      <div>
-        {{ isHappy ? ':)' : ':(' }}
+        {{ name}}
       </div>
     </div>
   `
 })
 export class AppComponent{
   title: string;
-  isHappy: boolean = false;
-  numberOne: number = 1;
-  numberTwo: number = 2;
+  name: string = 'Todd';
+  logo: string = 'img/pwa.svg';
   constructor () {
     this.title = 'Ultimate Angular';
   }
