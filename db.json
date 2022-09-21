@@ -4,35 +4,35 @@
       "id": 1,
       "fullname": "Steve",
       "checkedIn": true,
-      "checkedInDate": 1490742000000,
-      "baggage": ""
+      "checkInDate": 1490742000000,
+      "baggage": "none"
     },
     {
       "id": 2,
       "fullname": "Rose",
       "checkedIn": false,
-      "checkedInDate": null,
+      "checkInDate": null,
       "baggage": ""
     },
     {
       "id": 3,
       "fullname": "James",
       "checkedIn": true,
-      "checkedInDate": 1491606000000,
+      "checkInDate": 1491606000000,
       "baggage": ""
     },
     {
       "id": 4,
       "fullname": "Louise",
       "checkedIn": true,
-      "checkedInDate": 1488412800000,
+      "checkInDate": 1488412800000,
       "baggage": ""
     },
     {
       "id": 5,
       "fullname": "Tina",
       "checkedIn": false,
-      "checkedInDate": null,
+      "checkInDate": null,
       "baggage": ""
     }
   ]
