@@ -24,6 +24,7 @@ const routes: Routes = [
     //angular modules
     BrowserModule,
     CommonModule,
+    //RouterModule.forRoot(routes, { useHash: true }) koristenje u starijim browserima
     RouterModule.forRoot(routes),
     //custom modules
     PassengerDashBoardModule
