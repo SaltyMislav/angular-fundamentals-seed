@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router'
+
+//not needed ili se ne nalazi na lokaciji ko u videu, kada ga zakomentiram
+//sve normalno radi
+//import 'rxjs/add/switchMap';
 
 import { PassengerDashboardService } from '../../passenger-dashboard.service';
 
@@ -20,11 +25,14 @@ import { Passenger } from '../../models/passenger.interface';
 export class PassengerViewerComponent {
   passenger: Passenger;
 
-  constructor(private passengerServise: PassengerDashboardService) {}
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private passengerServise: PassengerDashboardService) {}
 
   ngOnInit() {
-    this.passengerServise
-      .getPassenger(1)
+    this.route.params
+      .switchMap((data: Passenger) => this.passengerServise.getPassenger(data.id))
       .subscribe((data: Passenger) => this.passenger = data);
   }
 
