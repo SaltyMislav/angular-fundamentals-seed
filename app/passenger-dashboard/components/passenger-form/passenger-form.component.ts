@@ -97,7 +97,7 @@ export class PassengerFormComponent {
 
   toggleCheckIn(checkedIn: boolean) {
     if(checkedIn){
-      this.detail.checkedInDate = Date.now();
+      this.detail.checkInDate = Date.now();
     }
   }
 

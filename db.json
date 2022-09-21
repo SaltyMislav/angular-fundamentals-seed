@@ -5,14 +5,14 @@
       "id": 1,
       "checkedIn": true,
       "baggage": "none",
-      "checkInDate": 1490742000000
+      "checkInDate": 1663784779670
     },
     {
-      "id": 2,
       "fullname": "Rose",
-      "checkedIn": false,
-      "checkInDate": null,
-      "baggage": ""
+      "id": 2,
+      "checkedIn": true,
+      "baggage": "",
+      "checkInDate": 1663784786819
     },
     {
       "id": 3,
