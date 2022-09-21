@@ -10,6 +10,7 @@ import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
+  //redirect umjesto comeponent ako zelimo da nam na to ode
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: '**', component: NotFoundComponent}
 ]
