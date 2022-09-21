@@ -5,7 +5,7 @@ import { Component } from "@angular/core/src/metadata";
   styleUrls: ['app.component.scss'],
   template: `
     <div class = "app">
-      <passenger-dashboard></passenger-dashboard>
+      <passenger-viewer></passenger-viewer>
     </div>
   `
 })
